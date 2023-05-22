@@ -46,6 +46,7 @@ Future<void> loadScriptUsingScriptTag(String url) {
 ///
 /// Returns a [Future] that resolves when all of the `script` tags `onLoad` events trigger.
 Future<void> injectJSLibraries(List<JsLibrary> libraries) {
+  return Future.value();
   final List<Future<void>> loading = [];
 
   for (final library in libraries) {
